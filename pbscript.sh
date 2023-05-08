@@ -12,7 +12,7 @@ dnf update --refresh -y;
 
 dnf groupupdate -y multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin sound-and-video;
 dnf group upgrade -y --with-optional Multimedia;
-dnf install -y lame\* --exclude=lame-devel intel-media-driver ffmpeg-libs libva libva-utils git;
+dnf install -y lame\* --exclude=lame-devel intel-media-driver ffmpeg-libs libva libva-utils git flatpak;
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo; flatpak update
 
