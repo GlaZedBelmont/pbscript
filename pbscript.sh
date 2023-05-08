@@ -2,7 +2,6 @@
 
 
 printf 'This script needs to be run as superuser (root on most unix systems)\n'
-cd ~/Desktop/
 
 sudo su - root << EOF
 echo 'max_parallel_downloads=10' >> /etc/dnf/dnf.conf
